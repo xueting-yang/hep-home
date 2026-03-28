@@ -94,7 +94,7 @@ function renderHepExCard({ title, authors, summary, published, arxivId, source, 
   const container = document.getElementById('hep-ex-card');
   if (!container || !arxivId) return;
   const pdfUrl = `https://arxiv.org/pdf/${arxivId}`;
-  const sourceLabel = source === 'live' ? '实时精选' : '推荐阅读';
+  const sourceLabel = source === 'live' ? '今日精选' : '精选推荐';
   const physicsBlock = physics ? `
     <div class="hep-physics">
       <div class="hep-physics-item">
@@ -140,7 +140,7 @@ function showOfflineCard() {
   if (!container) return;
   container.outerHTML = `
     <div class="hep-ex-offline" style="max-width:780px;margin:0 auto;">
-      <p>当前无法获取实时数据</p>
+      <p>暂无论文数据</p>
       <p style="margin-top:0.5rem;font-size:0.8rem;">
         <a href="https://arxiv.org/list/hep-ex/recent" target="_blank">访问 arXiv hep-ex 最近更新 →</a>
       </p>
@@ -168,6 +168,7 @@ function parseXmlEntries(text) {
 }
 
 async function fetchLivePaper() {
+  // Live fetch from arXiv - try multiple approaches
   const today = new Date();
   const dateStr = today.toISOString().split('T')[0];
   const yesterday = new Date(today);
@@ -182,6 +183,30 @@ async function fetchLivePaper() {
     .replace(/\]/g, '%5D');
   const apiUrl = `https://export.arxiv.org/api/query?search_query=${encodedSq}&sortBy=submittedDate&sortOrder=descending&max_results=30`;
 
+  // Try direct fetch first
+  try {
+    const resp = await fetch(apiUrl);
+    if (resp.ok) {
+      const text = await resp.text();
+      if (text && !text.includes('arxiv.org/api/errors')) {
+        const entries = parseXmlEntries(text);
+        if (entries.length > 0) {
+          const idx = Math.floor(Math.random() * Math.min(entries.length, 10));
+          const e = entries[idx];
+          return {
+            title: e.title,
+            authors: e.authors + (e.authorCount > 5 ? ' et al.' : ''),
+            summary: e.summary,
+            published: e.published,
+            arxivId: e.arxivId,
+            source: 'live',
+          };
+        }
+      }
+    }
+  } catch (_) {}
+
+  // Try proxy
   const text = await fetchWithProxy(apiUrl);
   if (!text) return null;
 
@@ -200,12 +225,11 @@ async function fetchLivePaper() {
   };
 }
 
-async function fetchFromFallback() {
+async function fetchFromPapersJson() {
   try {
     const resp = await fetch('./data/papers.json');
     if (!resp.ok) throw new Error();
     const papers = await resp.json();
-    // Pick a random paper from the collection
     const idx = Math.floor(Math.random() * papers.length);
     const p = papers[idx];
     return {
@@ -214,7 +238,7 @@ async function fetchFromFallback() {
       summary: p.summary,
       published: p.published,
       arxivId: p.arxivId,
-      source: 'fallback',
+      source: 'static',
       physics: p.physics || null,
     };
   } catch (_) {
@@ -223,16 +247,16 @@ async function fetchFromFallback() {
 }
 
 async function fetchHepExPaper() {
-  // Try live first, then fallback, then offline message
+  // Live fetch is best-effort; fallback to local papers.json always works
   const live = await fetchLivePaper().catch(() => null);
   if (live) {
     renderHepExCard(live);
     return;
   }
 
-  const fallback = await fetchFromFallback();
-  if (fallback) {
-    renderHepExCard(fallback);
+  const local = await fetchFromPapersJson();
+  if (local) {
+    renderHepExCard(local);
     return;
   }
 
