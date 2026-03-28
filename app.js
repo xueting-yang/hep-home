@@ -135,12 +135,13 @@ function renderHepExCard({ title, authors, summary, published, arxivId, source, 
   `;
 }
 
-function showOfflineCard() {
+function showOfflineCard(err) {
   const container = document.getElementById('hep-ex-card');
   if (!container) return;
+  const msg = err ? `加载失败: ${err.message}` : '暂无论文数据';
   container.outerHTML = `
     <div class="hep-ex-offline" style="max-width:780px;margin:0 auto;">
-      <p>暂无论文数据</p>
+      <p>${msg}</p>
       <p style="margin-top:0.5rem;font-size:0.8rem;">
         <a href="https://arxiv.org/list/hep-ex/recent" target="_blank">访问 arXiv hep-ex 最近更新 →</a>
       </p>
@@ -228,8 +229,9 @@ async function fetchLivePaper() {
 async function fetchFromPapersJson() {
   try {
     const resp = await fetch('./data/papers.json');
-    if (!resp.ok) throw new Error();
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const papers = await resp.json();
+    if (!Array.isArray(papers) || papers.length === 0) throw new Error('Empty papers list');
     const idx = Math.floor(Math.random() * papers.length);
     const p = papers[idx];
     return {
@@ -241,26 +243,28 @@ async function fetchFromPapersJson() {
       source: 'static',
       physics: p.physics || null,
     };
-  } catch (_) {
+  } catch (e) {
+    console.error('Failed to load papers.json:', e);
     return null;
   }
 }
 
 async function fetchHepExPaper() {
-  // Live fetch is best-effort; fallback to local papers.json always works
-  const live = await fetchLivePaper().catch(() => null);
-  if (live) {
-    renderHepExCard(live);
-    return;
-  }
-
+  // Try local papers first (always works when site is deployed)
   const local = await fetchFromPapersJson();
   if (local) {
     renderHepExCard(local);
     return;
   }
 
-  showOfflineCard();
+  // Fallback: try live arXiv (best-effort, may fail due to CORS)
+  const live = await fetchLivePaper().catch(e => ({ error: e }));
+  if (live && !live.error) {
+    renderHepExCard(live);
+    return;
+  }
+
+  showOfflineCard(live?.error);
 }
 
 // ──────────────────────────────────
