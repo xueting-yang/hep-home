@@ -591,3 +591,69 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===========================
+   Papers by Category
+   =========================== */
+
+#papers-by-category {
+  display: grid;
+  gap: 2rem;
+}
+
+.paper-category {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.category-title {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-title .count {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: normal;
+}
+
+.paper-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paper-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.paper-item:last-child {
+  border-bottom: none;
+}
+
+.paper-title {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.25rem;
+  transition: color 0.2s;
+}
+
+.paper-title:hover {
+  color: var(--secondary);
+}
+
+.paper-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}

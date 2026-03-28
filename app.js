@@ -274,4 +274,58 @@ async function fetchHepExPaper() {
 document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
   fetchHepExPaper();
+  loadPapersByCategory();
 });
+
+// ──────────────────────────────────
+// Load papers by category
+// ──────────────────────────────────
+
+async function loadPapersByCategory() {
+  try {
+    const resp = await fetch('./data/papers.json');
+    if (!resp.ok) return;
+    const papers = await resp.json();
+
+    const categories = {
+      '实验': papers.filter(p => p.category === '实验'),
+      '理论': papers.filter(p => p.category === '理论'),
+      '技术': papers.filter(p => p.category === '技术'),
+      '相关领域': papers.filter(p => p.category === '相关领域')
+    };
+
+    renderCategoryPapers(categories);
+  } catch (e) {
+    console.warn('Could not load papers:', e);
+  }
+}
+
+function renderCategoryPapers(categories) {
+  const container = document.getElementById('papers-by-category');
+  if (!container) return;
+
+  const html = Object.entries(categories).map(([cat, papers]) => {
+    if (papers.length === 0) return '';
+
+    const papersHtml = papers.slice(0, 5).map(p => `
+      <div class="paper-item">
+        <a href="https://arxiv.org/abs/${p.arxivId}" target="_blank" class="paper-title">
+          ${escapeHtml(p.title)}
+        </a>
+        <div class="paper-meta">
+          <span>${p.experiment || p.authors}</span>
+          <span>${p.published}</span>
+        </div>
+      </div>
+    `).join('');
+
+    return `
+      <div class="paper-category">
+        <h3 class="category-title">${cat} <span class="count">(${papers.length})</span></h3>
+        <div class="paper-list">${papersHtml}</div>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = html;
+}

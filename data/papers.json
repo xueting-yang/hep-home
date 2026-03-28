@@ -1,5 +1,119 @@
 [
   {
+    "title": "B-jet fragmentation with B± → J/ψK± decays in √s = 13 TeV pp collisions at LHCb",
+    "authors": "LHCb collaboration",
+    "arxivId": "2603.23663",
+    "published": "2026-03-24",
+    "experiment": "LHCb · LHC",
+    "category": "实验",
+    "physics": {
+      "question": "B 介子在喷注中的碎裂函数是什么？胶子碎裂对 B 介子产生的贡献如何随喷注横动量变化？",
+      "result": "使用 LHCb 5.4 fb⁻¹ 数据，通过 B± → J/ψK± 衰变测量 B 介子的喷注碎裂函数。结果表明随着喷注横动量增加，胶子碎裂对 B± 介子的贡献增长。",
+      "significance": "这是 LHCb 首次测量重味强子的喷注碎裂函数，补充了 ATLAS/CMS 的测量。对理解 QCD 碎裂机制和重味产生具有重要意义。",
+      "category": "B物理 · QCD"
+    },
+    "summary": "利用 LHCb 在 13 TeV 采集的 5.4 fb⁻¹ 数据，通过 J/ψ(→ μ⁺μ⁻)K± 衰变道重建 B± 介子，测量其在喷注中的共线和横动量依赖的碎裂函数以及径向分布。结果补充了最近对重味强子喷注碎裂函数的测量。",
+    "status": "unread",
+    "tags": [
+      "LHCb",
+      "B物理",
+      "QCD",
+      "喷注"
+    ],
+    "addedDate": "2026-03-28"
+  },
+  {
+    "title": "Measurement of dijet angular distributions and search for beyond the standard model physics in proton-proton collisions at √s = 13 TeV",
+    "authors": "CMS Collaboration",
+    "arxivId": "2603.25458",
+    "published": "2026-03-26",
+    "experiment": "CMS · LHC",
+    "physics": {
+      "question": "双喷注角分布能否揭示超出标准模型的新物理？夸克是否具有内部结构（复合性）？是否存在额外维度或量子黑洞？",
+      "result": "使用 CMS 138 fb⁻¹ 数据测量双喷注角分布，首次与 NNLO QCD + NLO 电弱修正比较。对夸克接触相互作用设置最严格限制：排除尺度达 17-37 TeV。",
+      "significance": "双喷注角分布是探测 TeV 尺度新物理的最敏感探针之一。对夸克复合性、额外维度、暗物质媒介子等多种新物理场景设置了迄今最严格的限制。",
+      "category": "新物理 · QCD"
+    },
+    "summary": "利用 CMS 探测器在 13 TeV 质子-质子对撞中采集的 138 fb⁻¹ 数据，测量双喷注角分布。首次与 NNLO QCD 预言（包含 NLO 电弱修正）比较。在 2.4-4.8 TeV 和 6 TeV 以上质量区间观测到小的形状差异。用于搜索夸克复合性、额外维度、量子黑洞、暗物质媒介子、类轴子粒子和反常胶子耦合，对多数场景设置了最严格限制。",
+    "status": "unread",
+    "tags": [
+      "新物理",
+      "QCD",
+      "CMS",
+      "双喷注"
+    ],
+    "addedDate": "2026-03-28",
+    "category": "实验"
+  },
+  {
+    "title": "Further search for magnetic-field-induced neutron disappearance in an ultracold neutron beam",
+    "authors": "Gaby Brenot, Benoit Clément, Hanno Filter-Pieler et al.",
+    "arxivId": "2603.25376",
+    "published": "2026-03-26",
+    "experiment": "ILL · PF2",
+    "physics": {
+      "question": "中子是否能振荡转变为'隐藏中子'（镜像物质）？这种振荡是否可以通过磁场共振增强？",
+      "result": "在 ILL 的超冷中子束中搜索中子-隐藏中子振荡。通过改变磁场扫描质量劈裂 60-1550 peV 范围。未发现中子消失信号，对振荡周期设置限制：τ > 200 ms (60-400 peV)，τ > 100 ms (400-1550 peV)。",
+      "significance": "中子-隐藏中子振荡是镜像物质暗物理论的关键预言。这一搜索探测了新的参数空间，对镜像暗物质模型设置了重要约束。",
+      "category": "新物理 · 中子物理"
+    },
+    "summary": "在 ILL 的 PF2 设施进行超冷中子束实验，搜索磁场诱导的中子消失现象。通过逐步改变磁场，在 60-1550 peV 质量劈裂范围内共振增强振荡概率。未观测到中子消失，在 95% 置信度设置了振荡周期的保守限制。",
+    "status": "unread",
+    "tags": [
+      "新物理",
+      "中子",
+      "暗物质",
+      "镜像物质"
+    ],
+    "addedDate": "2026-03-28",
+    "category": "相关领域"
+  },
+  {
+    "title": "Amplitude analysis and branching fraction measurement of the decay D⁰ → K⁺K⁻π⁰π⁰",
+    "authors": "BESIII Collaboration",
+    "arxivId": "2603.25649",
+    "published": "2026-03-26",
+    "experiment": "BESIII · BEPCII",
+    "physics": {
+      "question": "D⁰ 介子通过 K⁺K⁻π⁰π⁰ 末态衰变的内部机制是什么？不同中间态的贡献如何？这一 Cabibbo 压低衰变能否检验强相互作用动力学？",
+      "result": "首次对 D⁰ → K⁺K⁻π⁰π⁰ 进行振幅分析，测得分支比。主导过程是 D⁰ → K*(892)⁺K*(892)⁻，分支比 (2.79 ± 0.13 ± 0.11) × 10⁻³，以 S 波为主，纵向极化分数 0.468 ± 0.046。",
+      "significance": "这是首次对该衰变的完整振幅分析，揭示了粲介子衰变中的强相互作用动力学。S 波主导的发现对理解 D 介子非轻子衰变的 QCD 机制具有重要意义。",
+      "category": "粲物理 · 振幅分析"
+    },
+    "summary": "利用 BESIII 探测器在质心能量 3.773 GeV 采集的 20.3 fb⁻¹ 数据，首次对 D⁰ → K⁺K⁻π⁰π⁰ 衰变进行振幅分析。测得绝对分支比，主导中间过程为 D⁰ → K*(892)⁺K*(892)⁻，该衰变以 S 波为主。",
+    "status": "unread",
+    "tags": [
+      "粲物理",
+      "D介子",
+      "BESIII",
+      "振幅分析"
+    ],
+    "addedDate": "2026-03-28",
+    "category": "实验"
+  },
+  {
+    "title": "Precision measurement of the Z boson mass with the CMS detector",
+    "authors": "CMS Collaboration",
+    "arxivId": "2603.12987",
+    "published": "2026-03-25",
+    "experiment": "CMS · LHC",
+    "physics": {
+      "question": "Z boson 质量的精确值是多少？它与电弱理论的其他参数是否自洽？",
+      "result": "使用 CMS 在 13 TeV 采集的 138 fb⁻¹ 数据，通过 Z 到 μμ 衰变精确测量 Z boson 质量。测得 mZ = 91187.8 ± 2.1 MeV/c²，是 LHC 单实验最精确的测量。",
+      "significance": "Z boson 质量是电弱理论的基本参数，与 W boson 和 Higgs boson 质量通过电弱关系紧密关联。精确测量是检验标准模型自洽性的关键。",
+      "category": "电弱物理 · 精确测量"
+    },
+    "summary": "利用 CMS 探测器 138 fb⁻¹ 的 13 TeV 数据，通过 Z 到双 muon 衰变进行 Z boson 质量的精确测量。采用先进的刻度技术和系统误差控制，测得 mZ = 91187.8 ± 2.1 MeV/c²，精度达到 23 ppm，与 LEP 结果一致。",
+    "status": "unread",
+    "tags": [
+      "电弱物理",
+      "精确测量",
+      "CMS"
+    ],
+    "addedDate": "2026-03-28",
+    "category": "技术"
+  },
+  {
     "title": "Search for heavy neutral leptons in W to mu mu decays at 13 TeV with the ATLAS detector",
     "authors": "ATLAS Collaboration",
     "arxivId": "2603.12345",
@@ -11,7 +125,8 @@
       "significance": "HNL 是 see-saw 机制的关键预言——如果发现将解答「为什么中微子这么轻」这一基本问题。",
       "category": "新物理 · 中微子"
     },
-    "summary": "利用 ATLAS 在 13 TeV 采集的 36.1 fb⁻¹ 数据，在 W boson 双 muon 衰变中寻找重中性轻子。未观测到信号，对质量 5-50 GeV 区间设置了目前最严格的混合参数上限。"
+    "summary": "利用 ATLAS 在 13 TeV 采集的 36.1 fb⁻¹ 数据，在 W boson 双 muon 衰变中寻找重中性轻子。未观测到信号，对质量 5-50 GeV 区间设置了目前最严格的混合参数上限。",
+    "category": "技术"
   },
   {
     "title": "Measurement of the ttH production cross section in H to bb decay channel in pp collisions at 13 TeV",
@@ -25,7 +140,8 @@
       "significance": "ttH 过程直接探测 top-Higgs 耦合——这是标准模型最重的粒子与赋予所有粒子质量的 Higgs 之间的独特相互作用。",
       "category": "Higgs · 顶夸克"
     },
-    "summary": "利用 CMS 实验 138 fb⁻¹ 的 13 TeV 数据，测量 top quark 对与 Higgs boson 联合产生过程。Higgs 通过 H 到 bb 衰变重建，在单 lepton 末态下进行分析，是目前最灵敏的 ttH 测量通道之一。"
+    "summary": "利用 CMS 实验 138 fb⁻¹ 的 13 TeV 数据，测量 top quark 对与 Higgs boson 联合产生过程。Higgs 通过 H 到 bb 衰变重建，在单 lepton 末态下进行分析，是目前最灵敏的 ttH 测量通道之一。",
+    "category": "实验"
   },
   {
     "title": "Evidence for Bs to Ds* Ds decays",
@@ -39,7 +155,8 @@
       "significance": "这一衰变提供了 B 介子弱衰变中 QCD 非微扰效应的精确检验，同时是研究 CP 破坏的重要探针。",
       "category": "重味物理 · B介子"
     },
-    "summary": "LHCb 实验利用 6 fb⁻¹ 质子-质子碰撞数据，首次以超过 4 sigma 显著性观测到 Bs 到 Ds* Ds 双重粲介子衰变。测得分支比约为 1.3e-3，与 LQCD 理论计算相符。"
+    "summary": "LHCb 实验利用 6 fb⁻¹ 质子-质子碰撞数据，首次以超过 4 sigma 显著性观测到 Bs 到 Ds* Ds 双重粲介子衰变。测得分支比约为 1.3e-3，与 LQCD 理论计算相符。",
+    "category": "实验"
   },
   {
     "title": "Dark photon search in e+ e- to gamma A' at Belle II",
@@ -53,7 +170,8 @@
       "significance": "暗光子是暗物质候选者之一，连接可见世界与暗 sector。若发现将开启全新的粒子物理研究方向。",
       "category": "新物理 · 暗物质"
     },
-    "summary": "Belle II 实验利用 424 fb⁻¹ 的正负电子对撞数据，通过 e+ e- 到 gamma A' 过程寻找暗光子。实验通过伴随辐射光子来标记暗光子的产生，对动力学混合参数设置了 0.5-10 GeV 质量区间目前最严格的限制。"
+    "summary": "Belle II 实验利用 424 fb⁻¹ 的正负电子对撞数据，通过 e+ e- 到 gamma A' 过程寻找暗光子。实验通过伴随辐射光子来标记暗光子的产生，对动力学混合参数设置了 0.5-10 GeV 质量区间目前最严格的限制。",
+    "category": "实验"
   },
   {
     "title": "Precision measurement of the W boson mass with the CDF II detector",
@@ -67,7 +185,8 @@
       "significance": "W boson 质量与 top quark 质量和 Higgs boson 质量通过电弱相互作用紧密关联。精确测量是检验标准模型自洽性的最敏感手段之一，也是发现新物理的敏感探针。",
       "category": "电弱物理 · 精确测量"
     },
-    "summary": "CDF 实验使用 Tevatron 质子-反质子对撞的 2.2 fb⁻¹ 数据，对 W boson 质量进行终极精确测量。测得 mW = 80433.5 +/- 6.4 MeV/c^2，精度达到 80 ppm，是全球单实验最精确的 W 质量测量。"
+    "summary": "CDF 实验使用 Tevatron 质子-反质子对撞的 2.2 fb⁻¹ 数据，对 W boson 质量进行终极精确测量。测得 mW = 80433.5 +/- 6.4 MeV/c^2，精度达到 80 ppm，是全球单实验最精确的 W 质量测量。",
+    "category": "实验"
   },
   {
     "title": "Search for lepton flavor violation in tau to mu mu mu decays",
@@ -81,7 +200,8 @@
       "significance": "在标准模型中，轻子味守恒。如果观测到任何轻子味破坏，将是新物理的确凿证据。",
       "category": "新物理 · 轻子味破坏"
     },
-    "summary": "BaBar 实验利用 PEP-II 469 fb⁻¹ 的数据，寻找轻子味破坏过程 tau 到 mu mu mu。虽然未发现信号，但将分支比上限压缩至 2.1e-8，代表了目前最灵敏的 tau 到 3mu 衰变搜索。"
+    "summary": "BaBar 实验利用 PEP-II 469 fb⁻¹ 的数据，寻找轻子味破坏过程 tau 到 mu mu mu。虽然未发现信号，但将分支比上限压缩至 2.1e-8，代表了目前最灵敏的 tau 到 3mu 衰变搜索。",
+    "category": "实验"
   },
   {
     "title": "Observation of B+ to K+ nu nu decay",
@@ -95,6 +215,7 @@
       "significance": "B 到 K nu nu 是最稀有的 B 介子衰变之一，是探测新物理的极敏感探针。任何新粒子都会显著改变其分支比。",
       "category": "稀有衰变 · B物理"
     },
-    "summary": "Belle II 实验利用 SuperKEKB 数据，首次观测到 B+ 到 K+ nu nu 衰变（5.9 sigma 显著性）。由于中微子对不被探测器探测，只能通过缺失能量重建。此观测是 B 物理里程碑，SM 预言与测量值在 1.9 sigma 内一致。"
+    "summary": "Belle II 实验利用 SuperKEKB 数据，首次观测到 B+ 到 K+ nu nu 衰变（5.9 sigma 显著性）。由于中微子对不被探测器探测，只能通过缺失能量重建。此观测是 B 物理里程碑，SM 预言与测量值在 1.9 sigma 内一致。",
+    "category": "实验"
   }
 ]
