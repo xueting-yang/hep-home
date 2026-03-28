@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python plot_ckm_gamma.py)",
+      "Bash(python3 plot_ckm_gamma.py)",
+      "Bash(pip3 install:*)",
+      "WebFetch(domain:minimax-algeng-chat-tts.oss-cn-wulanchabu.aliyuncs.com)",
+      "Bash(git config:*)",
+      "Bash(gh --version)"
+    ]
+  }
+}

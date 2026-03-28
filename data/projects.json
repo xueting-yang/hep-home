@@ -1,0 +1,34 @@
+[
+  {
+    "title": "HTML 个人主页",
+    "status": "done",
+    "description": "使用 HTML 和 CSS 构建的第一个个人主页，包含自我介绍和作品展示。",
+    "date": "2026年3月",
+    "url": "#",
+    "tags": ["HTML", "CSS", "前端"]
+  },
+  {
+    "title": "CSS 响应式布局",
+    "status": "done",
+    "description": "练习 Flexbox 和 Grid 布局，实现移动端适配的响应式页面。",
+    "date": "2026年3月",
+    "url": "#",
+    "tags": ["CSS", "Flexbox", "Grid"]
+  },
+  {
+    "title": "JavaScript 交互特效",
+    "status": "progress",
+    "description": "学习 DOM 操作和事件处理，制作简单的动画交互效果。",
+    "date": "2026年3月",
+    "url": "#",
+    "tags": ["JavaScript", "DOM"]
+  },
+  {
+    "title": "小作品集网站",
+    "status": "progress",
+    "description": "综合运用前端知识，打造个人的在线作品集展示页面。",
+    "date": "2026年4月",
+    "url": "#",
+    "tags": ["项目", "作品集"]
+  }
+]

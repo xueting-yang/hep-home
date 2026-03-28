@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Search for heavy neutral leptons in $W^\\pm \\to \\mu^\\pm \\mu^\\pm$ decays at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+    "authors": "ATLAS Collaboration",
+    "authorCount": 1,
+    "summary": "A search for heavy neutral leptons (HNLs) decaying into two same-sign muons is performed using $36.1\\ \\mathrm{fb}^{-1}$ of $pp$ collision data at $\\sqrt{s}=13$ TeV collected by the ATLAS detector. The observed data are consistent with Standard Model background expectations. Upper limits are set on the mixing parameter $|U_{\\mu N}|^2$ for HNL masses between 5 GeV and 50 GeV.",
+    "published": "2026-03-27",
+    "arxivId": "2603.12345"
+  },
+  {
+    "title": "Measurement of the $t\\bar{t}H$ production cross section in the $H \\to b\\bar{b}$ decay channel in $pp$ collisions at $\\sqrt{s}=13$ TeV",
+    "authors": "CMS Collaboration",
+    "authorCount": 1,
+    "summary": "A measurement of the associated production of a Higgs boson with a top quark-antiquark pair ($t\\bar{t}H$) in proton-proton collisions at $\\sqrt{s}=13$ TeV is presented. The analysis uses data corresponding to an integrated luminosity of $138\\ \\mathrm{fb}^{-1}$ recorded by the CMS experiment at the LHC. The $H \\to b\\bar{b}$ decay channel is explored using events with exactly one lepton and at least four jets.",
+    "published": "2026-03-26",
+    "arxivId": "2603.11876"
+  },
+  {
+    "title": "Evidence for $B_s^0 \\to D_s^{*+} D_s^{-}$ decays",
+    "authors": "LHCb Collaboration",
+    "authorCount": 1,
+    "summary": "Evidence for the rare $B_s^0 \\to D_s^{*+} D_s^{-}$ decay is reported using proton-proton collision data collected by the LHCb experiment at $\\sqrt{s}=13$ TeV, corresponding to an integrated luminosity of $6\\ \\mathrm{fb}^{-1}$. The significance exceeds 4 standard deviations. The branching fraction is measured to be $\\mathcal{B}(B_s^0 \\to D_s^{*+} D_s^{-}) = (1.3 \\pm 0.4) \\times 10^{-3}$.",
+    "published": "2026-03-25",
+    "arxivId": "2603.11023"
+  },
+  {
+    "title": "Dark photon search in $e^+e^- \\to \\gamma A'$ at Belle II",
+    "authors": "Belle II Collaboration",
+    "authorCount": 1,
+    "summary": "A search for dark photons ($A'$) in the process $e^+e^- \\to \\gamma A'$ is performed using data collected by the Belle II experiment at SuperKEKB with an integrated luminosity of $424\\ \\mathrm{fb}^{-1}$. No significant signal is observed. Upper limits on the kinetic mixing parameter $\\varepsilon^2$ are set for dark photon masses between 0.5 GeV and 10 GeV.",
+    "published": "2026-03-24",
+    "arxivId": "2603.10567"
+  },
+  {
+    "title": "Precision measurement of the $W$ boson mass with the CDF II detector",
+    "authors": "CDF Collaboration",
+    "authorCount": 1,
+    "summary": "We present a precise measurement of the $W$ boson mass $m_W$ using data collected by the CDF II detector from $\\sqrt{s}=1.96$ TeV proton-antiproton collisions at the Tevatron. The measurement uses $2.2\\ \\mathrm{fb}^{-1}$ of data and yields $m_W = 80433.5 \\pm 6.4\\ \\mathrm{MeV}/c^2$, representing the most precise single experiment determination to date.",
+    "published": "2026-03-20",
+    "arxivId": "2603.09888"
+  },
+  {
+    "title": "Search for lepton flavor violation in $\\tau^- \\to \\mu^- \\mu^+ \\mu^-$ decays",
+    "authors": "BaBar Collaboration",
+    "authorCount": 1,
+    "summary": "A search for the lepton-flavor-violating decay $\\tau^- \\to \\mu^- \\mu^+ \\mu^-$ is performed using a data sample of $469\\ \\mathrm{fb}^{-1}$ recorded by the BaBar detector at the PEP-II $e^+e^-$ asymmetric-energy collider. No significant signal is observed and an upper limit on the branching fraction $\\mathcal{B}(\\tau^- \\to \\mu^- \\mu^+ \\mu^-) < 2.1 \\times 10^{-8}$ at 90% confidence level is set.",
+    "published": "2026-03-18",
+    "arxivId": "2603.08623"
+  },
+  {
+    "title": "Observation of $B^+ \\to K^+ \\nu \\bar{\\nu}$ decay",
+    "authors": "Belle II Collaboration",
+    "authorCount": 1,
+    "summary": "The first observation of the rare decay $B^+ \\to K^+ \\nu \\bar{\\nu}$ is reported using data collected by the Belle II experiment at SuperKEKB. The significance is $5.9\\ \\sigma$ and the branching fraction is measured to be $\\mathcal{B}(B^+ \\to K^+ \\nu \\bar{\\nu}) = (1.7 \\pm 0.4) \\times 10^{-5}$, consistent with Standard Model predictions within $1.9\\ \\sigma$.",
+    "published": "2026-03-15",
+    "arxivId": "2603.07234"
+  }
+]
