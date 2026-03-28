@@ -90,25 +90,47 @@ async function fetchWithProxy(url) {
   return null;
 }
 
-function renderHepExCard({ title, authors, summary, published, arxivId, source }) {
+function renderHepExCard({ title, authors, summary, published, arxivId, source, physics }) {
   const container = document.getElementById('hep-ex-card');
   if (!container || !arxivId) return;
   const pdfUrl = `https://arxiv.org/pdf/${arxivId}`;
-  const sourceLabel = source === 'live' ? '今日精选' : (source === 'fallback' ? '热门论文' : arxivId);
+  const sourceLabel = source === 'live' ? '实时精选' : '推荐阅读';
+  const physicsBlock = physics ? `
+    <div class="hep-physics">
+      <div class="hep-physics-item">
+        <span class="hep-physics-label">🔭 物理问题</span>
+        <p class="hep-physics-text">${escapeHtml(physics.question)}</p>
+      </div>
+      <div class="hep-physics-item">
+        <span class="hep-physics-label">📊 核心成果</span>
+        <p class="hep-physics-text">${escapeHtml(physics.result)}</p>
+      </div>
+      <div class="hep-physics-item">
+        <span class="hep-physics-label">💡 重要意义</span>
+        <p class="hep-physics-text">${escapeHtml(physics.significance)}</p>
+      </div>
+      ${physics.category ? `<span class="hep-category">${escapeHtml(physics.category)}</span>` : ''}
+    </div>
+  ` : '';
+
+  const titleHtml = `<a href="${pdfUrl}" target="_blank" class="hep-title-link">${escapeHtml(title)}</a>`;
   container.outerHTML = `
     <div class="hep-ex-container">
-      <a href="${pdfUrl}" target="_blank" class="hep-ex-card">
+      <div class="hep-ex-card">
         <div class="hep-ex-card-header">
-          <h3 class="hep-ex-title">${escapeHtml(title)}</h3>
-          <span class="hep-ex-badge">${sourceLabel} · ${published}</span>
+          <div class="hep-ex-title-row">
+            <h3 class="hep-ex-title">${titleHtml}</h3>
+            <span class="hep-ex-badge">${sourceLabel} · ${published}</span>
+          </div>
+          <p class="hep-ex-authors">${escapeHtml(authors)} · <a href="https://arxiv.org/abs/${arxivId}" target="_blank" class="hep-arxiv-link">arXiv:${arxivId}</a></p>
         </div>
-        <p class="hep-ex-authors">${escapeHtml(authors)}</p>
-        <p class="hep-ex-abstract">${escapeHtml(summary)}</p>
+        ${physicsBlock}
         <div class="hep-ex-footer">
-          <span>arXiv:${arxivId}</span>
-          <span class="hep-ex-link">PDF →</span>
+          <span class="hep-abstract-label">摘要</span>
+          <span><a href="${pdfUrl}" target="_blank" class="hep-ex-link">阅读PDF →</a></span>
         </div>
-      </a>
+        <p class="hep-ex-abstract">${escapeHtml(summary)}</p>
+      </div>
     </div>
   `;
 }
@@ -183,7 +205,8 @@ async function fetchFromFallback() {
     const resp = await fetch('./data/papers.json');
     if (!resp.ok) throw new Error();
     const papers = await resp.json();
-    const idx = Math.floor(Math.random() * Math.min(papers.length, 5));
+    // Pick a random paper from the collection
+    const idx = Math.floor(Math.random() * papers.length);
     const p = papers[idx];
     return {
       title: p.title,
@@ -192,6 +215,7 @@ async function fetchFromFallback() {
       published: p.published,
       arxivId: p.arxivId,
       source: 'fallback',
+      physics: p.physics || null,
     };
   } catch (_) {
     return null;
