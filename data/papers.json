@@ -6,9 +6,9 @@
     "published": "2026-03-27",
     "experiment": "ATLAS · LHC",
     "physics": {
-      "question": "宇宙中为什么中微子有质量？是否存在一种可以解释中微子质量的"重中性轻子"（HNL）？",
+      "question": "宇宙中为什么中微子有质量？是否存在一种可以解释中微子质量的「重中性轻子」（HNL）？",
       "result": "在 W boson → 双μ子衰变中未发现 HNL 信号，但对 5–50 GeV 质量区间的混合参数 $|U_{\\mu N}|^2$ 设置了新的排除上限。",
-      "significance": "HNL 是跷跷板机制（see-saw mechanism）的关键预言——如果发现将解答"为什么中微子这么轻"这一基本问题。",
+      "significance": "HNL 是跷跷板机制（see-saw mechanism）的关键预言——如果发现将解答「为什么中微子这么轻」这一基本问题。",
       "category": "新物理 · 中微子"
     },
     "summary": "利用 ATLAS 在 13 TeV 采集的 36.1 fb⁻¹ 数据，在 W boson 双μ衰变中寻找重中性轻子。未观测到信号，对质量 5–50 GeV 区间设置了目前最严格的 $|U_{\\mu N}|^2$ 混合参数上限。"
@@ -20,7 +20,7 @@
     "published": "2026-03-26",
     "experiment": "CMS · LHC",
     "physics": {
-      "question": "top  quark 和 Higgs boson 之间的耦合强度是否与标准模型预言一致？",
+      "question": "top quark 和 Higgs boson 之间的耦合强度是否与标准模型预言一致？",
       "result": "使用 138 fb⁻¹ 数据，在单 lepton + ≥4 jets 末态中测量 tt̄H (H→bā) 过程，测量结果与标准模型预言相符。",
       "significance": "ttH 过程直接探测 top-Higgs 耦合——这是标准模型最重的粒子与赋予所有粒子质量的 Higgs 之间的独特相互作用。",
       "category": "Higgs · 顶夸克"
@@ -48,7 +48,7 @@
     "published": "2026-03-24",
     "experiment": "Belle II · SuperKEKB",
     "physics": {
-      "question": "暗物质是否通过一种"暗光子"与可见世界发生微弱相互作用？",
+      "question": "暗物质是否通过一种「暗光子」与可见世界发生微弱相互作用？",
       "result": "在 424 fb⁻¹ 数据中未发现暗光子信号，对 0.5–10 GeV 质量区间的动力学混合参数 ε² 设置了新的排除上限。",
       "significance": "暗光子是暗物质候选者之一，连接可见世界与暗 sector。若发现将开启全新的粒子物理研究方向。",
       "category": "新物理 · 暗物质"
@@ -76,7 +76,7 @@
     "published": "2026-03-18",
     "experiment": "BaBar · PEP-II",
     "physics": {
-      "question": "轻子家族（e, μ, τ）之间的转化是否可能发生？这种"轻子味破坏"是否超出标准模型？",
+      "question": "轻子家族（e, μ, τ）之间的转化是否可能发生？这种「轻子味破坏」是否超出标准模型？",
       "result": "在 BaBar 469 fb⁻¹ 数据中未发现 τ⁻→μ⁻μ⁺μ⁻ 衰变，设置 90% 置信度分支比上限为 2.1×10⁻⁸。",
       "significance": "在标准模型中，轻子味守恒（只有中微子混合可以导致 LFV）。如果观测到任何轻子味破坏，将是BSM新物理的确凿证据。",
       "category": "新物理 · 轻子味破坏"
