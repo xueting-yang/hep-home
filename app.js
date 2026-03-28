@@ -275,6 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
   loadProjects();
   fetchHepExPaper();
   loadPapersByCategory();
+  loadKnowledge();
+  updateLastUpdate();
 });
 
 // ──────────────────────────────────
@@ -328,4 +330,43 @@ function renderCategoryPapers(categories) {
   }).join('');
 
   container.innerHTML = html;
+}
+
+// ──────────────────────────────────
+// Load knowledge base
+// ──────────────────────────────────
+
+async function loadKnowledge() {
+  const container = document.getElementById('knowledge-list');
+  if (!container) return;
+
+  try {
+    const resp = await fetch('./data/knowledge.json');
+    if (!resp.ok) return;
+    const items = await resp.json();
+
+    if (items.length === 0) {
+      container.innerHTML = '<p style="color:var(--muted)">知识库内容即将上线...</p>';
+      return;
+    }
+
+    const html = items.map(item => `
+      <div class="knowledge-item">
+        <h3>${escapeHtml(item.title)}</h3>
+        <div class="meta">${item.category}</div>
+      </div>
+    `).join('');
+
+    container.innerHTML = html;
+  } catch (e) {
+    console.warn('Could not load knowledge:', e);
+  }
+}
+
+function updateLastUpdate() {
+  const el = document.getElementById('last-update');
+  if (el) {
+    const now = new Date();
+    el.textContent = now.toISOString().split('T')[0];
+  }
 }
