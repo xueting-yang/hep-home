@@ -1,100 +1,100 @@
 [
   {
-    "title": "Search for heavy neutral leptons in $W^\\pm \\to \\mu^\\pm \\mu^\\pm$ decays at $\\sqrt{s}=13$ TeV with the ATLAS detector",
+    "title": "Search for heavy neutral leptons in W to mu mu decays at 13 TeV with the ATLAS detector",
     "authors": "ATLAS Collaboration",
     "arxivId": "2603.12345",
     "published": "2026-03-27",
     "experiment": "ATLAS · LHC",
     "physics": {
-      "question": "宇宙中为什么中微子有质量？是否存在一种可以解释中微子质量的「重中性轻子」（HNL）？",
-      "result": "在 W boson → 双μ子衰变中未发现 HNL 信号，但对 5–50 GeV 质量区间的混合参数 $|U_{\\mu N}|^2$ 设置了新的排除上限。",
-      "significance": "HNL 是跷跷板机制（see-saw mechanism）的关键预言——如果发现将解答「为什么中微子这么轻」这一基本问题。",
+      "question": "宇宙中为什么中微子有质量？是否存在一种「重中性轻子」(HNL) 可以解释中微子质量的起源？",
+      "result": "在 W boson 双 muon 衰变中未发现 HNL 信号，但对 5-50 GeV 质量区间的混合参数设置了新的排除上限。",
+      "significance": "HNL 是 see-saw 机制的关键预言——如果发现将解答「为什么中微子这么轻」这一基本问题。",
       "category": "新物理 · 中微子"
     },
-    "summary": "利用 ATLAS 在 13 TeV 采集的 36.1 fb⁻¹ 数据，在 W boson 双μ衰变中寻找重中性轻子。未观测到信号，对质量 5–50 GeV 区间设置了目前最严格的 $|U_{\\mu N}|^2$ 混合参数上限。"
+    "summary": "利用 ATLAS 在 13 TeV 采集的 36.1 fb⁻¹ 数据，在 W boson 双 muon 衰变中寻找重中性轻子。未观测到信号，对质量 5-50 GeV 区间设置了目前最严格的混合参数上限。"
   },
   {
-    "title": "Measurement of the $t\\bar{t}H$ production cross section in the $H \\to b\\bar{b}$ decay channel in $pp$ collisions at $\\sqrt{s}=13$ TeV",
+    "title": "Measurement of the ttH production cross section in H to bb decay channel in pp collisions at 13 TeV",
     "authors": "CMS Collaboration",
     "arxivId": "2603.11876",
     "published": "2026-03-26",
     "experiment": "CMS · LHC",
     "physics": {
       "question": "top quark 和 Higgs boson 之间的耦合强度是否与标准模型预言一致？",
-      "result": "使用 138 fb⁻¹ 数据，在单 lepton + ≥4 jets 末态中测量 tt̄H (H→bā) 过程，测量结果与标准模型预言相符。",
+      "result": "使用 138 fb⁻¹ 数据，在单 lepton + 4 jets 末态中测量 ttH 过程，测量结果与标准模型预言相符。",
       "significance": "ttH 过程直接探测 top-Higgs 耦合——这是标准模型最重的粒子与赋予所有粒子质量的 Higgs 之间的独特相互作用。",
       "category": "Higgs · 顶夸克"
     },
-    "summary": "利用 CMS 实验 138 fb⁻¹ 的 13 TeV 数据，测量 top quark 对与 Higgs boson 联合产生（tt̄H）过程。Higgs 通过 H→bā 衰变重建，在单 lepton 末态下进行分析，是目前最灵敏的 tt̄H 测量通道之一。"
+    "summary": "利用 CMS 实验 138 fb⁻¹ 的 13 TeV 数据，测量 top quark 对与 Higgs boson 联合产生过程。Higgs 通过 H 到 bb 衰变重建，在单 lepton 末态下进行分析，是目前最灵敏的 ttH 测量通道之一。"
   },
   {
-    "title": "Evidence for $B_s^0 \\to D_s^{*+} D_s^{-}$ decays",
+    "title": "Evidence for Bs to Ds* Ds decays",
     "authors": "LHCb Collaboration",
     "arxivId": "2603.11023",
     "published": "2026-03-25",
     "experiment": "LHCb · LHC",
     "physics": {
-      "question": "B_s 介子能否通过双重粲介子末态衰变？这一过程的分支比是否符合 QCD 理论计算？",
-      "result": "在 LHCb 6 fb⁻¹ 数据中首次观测到 B_s → D_s*⁺ D_s⁻ 衰变，显著性超过 4σ，测量分支比为 (1.3±0.4)×10⁻³。",
+      "question": "Bs 介子能否通过双重粲介子末态衰变？这一过程的分支比是否符合 QCD 理论计算？",
+      "result": "在 LHCb 6 fb⁻¹ 数据中首次观测到 Bs 到 Ds* Ds 衰变，显著性超过 4 sigma，测得分支比约为 1.3e-3。",
       "significance": "这一衰变提供了 B 介子弱衰变中 QCD 非微扰效应的精确检验，同时是研究 CP 破坏的重要探针。",
       "category": "重味物理 · B介子"
     },
-    "summary": "LHCb 实验利用 6 fb⁻¹ 质子-质子碰撞数据，首次以超过 4σ 显著性观测到 B_s → D_s*⁺ D_s⁻ 双重粲介子衰变。测得分支比约为 1.3×10⁻³，与LQCD理论计算相符。"
+    "summary": "LHCb 实验利用 6 fb⁻¹ 质子-质子碰撞数据，首次以超过 4 sigma 显著性观测到 Bs 到 Ds* Ds 双重粲介子衰变。测得分支比约为 1.3e-3，与 LQCD 理论计算相符。"
   },
   {
-    "title": "Dark photon search in $e^+e^- \\to \\gamma A'$ at Belle II",
+    "title": "Dark photon search in e+ e- to gamma A' at Belle II",
     "authors": "Belle II Collaboration",
     "arxivId": "2603.10567",
     "published": "2026-03-24",
     "experiment": "Belle II · SuperKEKB",
     "physics": {
       "question": "暗物质是否通过一种「暗光子」与可见世界发生微弱相互作用？",
-      "result": "在 424 fb⁻¹ 数据中未发现暗光子信号，对 0.5–10 GeV 质量区间的动力学混合参数 ε² 设置了新的排除上限。",
+      "result": "在 424 fb⁻¹ 数据中未发现暗光子信号，对 0.5-10 GeV 质量区间的动力学混合参数设置了新的排除上限。",
       "significance": "暗光子是暗物质候选者之一，连接可见世界与暗 sector。若发现将开启全新的粒子物理研究方向。",
       "category": "新物理 · 暗物质"
     },
-    "summary": "Belle II 实验利用 424 fb⁻¹ 的正负电子对撞数据，通过 e⁺e⁻→γA' 过程寻找暗光子（A'）。实验通过伴随辐射光子来标记暗光子的产生，对动力学混合参数设置了 0.5–10 GeV 质量区间目前最严格的限制。"
+    "summary": "Belle II 实验利用 424 fb⁻¹ 的正负电子对撞数据，通过 e+ e- 到 gamma A' 过程寻找暗光子。实验通过伴随辐射光子来标记暗光子的产生，对动力学混合参数设置了 0.5-10 GeV 质量区间目前最严格的限制。"
   },
   {
-    "title": "Precision measurement of the $W$ boson mass with the CDF II detector",
+    "title": "Precision measurement of the W boson mass with the CDF II detector",
     "authors": "CDF Collaboration",
     "arxivId": "2603.09888",
     "published": "2026-03-20",
     "experiment": "CDF · Tevatron",
     "physics": {
       "question": "W boson 质量的精确值是多少？它与标准模型其他参数的自洽性如何？",
-      "result": "利用 CDF II 探测器 2.2 fb⁻¹ 的 Tevatron 数据，测得 W boson 质量 m_W = 80433.5 ± 6.4 MeV/c²，是世界上单实验最精确的测量。",
+      "result": "利用 CDF II 探测器 2.2 fb⁻¹ 的 Tevatron 数据，测得 W boson 质量 mW = 80433.5 +/- 6.4 MeV/c^2，是世界上单实验最精确的测量。",
       "significance": "W boson 质量与 top quark 质量和 Higgs boson 质量通过电弱相互作用紧密关联。精确测量是检验标准模型自洽性的最敏感手段之一，也是发现新物理的敏感探针。",
       "category": "电弱物理 · 精确测量"
     },
-    "summary": "CDF 实验使用 Tevatron 质子-反质子对撞（√s=1.96 TeV）的 2.2 fb⁻¹ 数据，对 W boson 质量进行终极精确测量。测得 m_W = 80433.5 ± 6.4 MeV/c²，精度达到 80 ppm，是全球单实验最精确的 W 质量测量。"
+    "summary": "CDF 实验使用 Tevatron 质子-反质子对撞的 2.2 fb⁻¹ 数据，对 W boson 质量进行终极精确测量。测得 mW = 80433.5 +/- 6.4 MeV/c^2，精度达到 80 ppm，是全球单实验最精确的 W 质量测量。"
   },
   {
-    "title": "Search for lepton flavor violation in $\\tau^- \\to \\mu^- \\mu^+ \\mu^-$ decays",
+    "title": "Search for lepton flavor violation in tau to mu mu mu decays",
     "authors": "BaBar Collaboration",
     "arxivId": "2603.08623",
     "published": "2026-03-18",
     "experiment": "BaBar · PEP-II",
     "physics": {
-      "question": "轻子家族（e, μ, τ）之间的转化是否可能发生？这种「轻子味破坏」是否超出标准模型？",
-      "result": "在 BaBar 469 fb⁻¹ 数据中未发现 τ⁻→μ⁻μ⁺μ⁻ 衰变，设置 90% 置信度分支比上限为 2.1×10⁻⁸。",
-      "significance": "在标准模型中，轻子味守恒（只有中微子混合可以导致 LFV）。如果观测到任何轻子味破坏，将是BSM新物理的确凿证据。",
+      "question": "轻子家族（e, mu, tau）之间的转化是否可能发生？这种「轻子味破坏」是否超出标准模型？",
+      "result": "在 BaBar 469 fb⁻¹ 数据中未发现 tau 到 mu mu mu 衰变，设置 90% 置信度分支比上限为 2.1e-8。",
+      "significance": "在标准模型中，轻子味守恒。如果观测到任何轻子味破坏，将是新物理的确凿证据。",
       "category": "新物理 · 轻子味破坏"
     },
-    "summary": "BaBar 实验利用 PEP-II 469 fb⁻¹ 的数据，寻找轻子味破坏（LFV）过程 τ⁻→μ⁻μ⁺μ⁻。虽然未发现信号，但将分支比上限压缩至 2.1×10⁻⁸，代表了目前 τ→3μ 衰变最灵敏的搜索之一。"
+    "summary": "BaBar 实验利用 PEP-II 469 fb⁻¹ 的数据，寻找轻子味破坏过程 tau 到 mu mu mu。虽然未发现信号，但将分支比上限压缩至 2.1e-8，代表了目前最灵敏的 tau 到 3mu 衰变搜索。"
   },
   {
-    "title": "Observation of $B^+ \\to K^+ \\nu \\bar{\\nu}$ decay",
+    "title": "Observation of B+ to K+ nu nu decay",
     "authors": "Belle II Collaboration",
     "arxivId": "2603.07234",
     "published": "2026-03-15",
     "experiment": "Belle II · SuperKEKB",
     "physics": {
-      "question": "B 介子能否在只产生中微子对的情况下转变为奇异 quark（K meson）？这种极其罕见的衰变是否符合标准模型？",
-      "result": "利用 Belle II 数据首次观测到 B⁺→K⁺νν̄ 衰变，显著性达 5.9σ，测得分支比为 (1.7±0.4)×10⁻⁵，与 SM 预言一致（1.9σ 偏差）。",
-      "significance": "B→Kνν̄ 是最稀有的 B 介子衰变之一（SM 预言分支比仅 ~5×10⁻⁶），是探测新物理的极敏感探针——任何新粒子（如暗光子、轻标量）都会显著改变其分支比。",
+      "question": "B 介子能否在只产生中微子对的情况下转变为 K 介子？这种极其罕见的衰变是否符合标准模型？",
+      "result": "利用 Belle II 数据首次观测到 B+ 到 K+ nu nu 衰变，显著性达 5.9 sigma，测得分支比为 1.7e-5，与 SM 预言一致（1.9 sigma 偏差）。",
+      "significance": "B 到 K nu nu 是最稀有的 B 介子衰变之一，是探测新物理的极敏感探针。任何新粒子都会显著改变其分支比。",
       "category": "稀有衰变 · B物理"
     },
-    "summary": "Belle II 实验利用 SuperKEKB 数据，首次观测到 B⁺→K⁺νν̄ 衰变（5.9σ 显著性）。由于中微子对不被探测器探测，只能通过缺失能量重建。此观测是 B 物理里程碑，SM 预言与测量值在 1.9σ 内一致。"
+    "summary": "Belle II 实验利用 SuperKEKB 数据，首次观测到 B+ 到 K+ nu nu 衰变（5.9 sigma 显著性）。由于中微子对不被探测器探测，只能通过缺失能量重建。此观测是 B 物理里程碑，SM 预言与测量值在 1.9 sigma 内一致。"
   }
 ]
